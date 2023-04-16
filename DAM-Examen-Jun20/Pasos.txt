@@ -1,0 +1,51 @@
+1. Crea la base de datos con el script del enunciado:
+ 	1. Conectarte con mysql (o MySQLWorkBench) como root
+ 	2. Crea la base de datos (vacía) con el comando: create database comunidad;
+ 	3. Si lo pide el enunciado, crea un usuario para acceder a la base de datos desde la aplicación. Con el comando: create user comunidad identified by 'comunidad';
+ 		3a. Da permisos al usuario con el comando: grant all on comunidad.* to comunidad;
+ 	4. Carga el script comunidad.sql del enunciado en la base de datos creada. Con MySQL Workbench o con el comando de sistema operativo: 
+  		mysql -u root -p comunidad < comunidad.sql
+ 
+2. Configura los datos de conexión (nombre de la base de datos, usuario y clave) en la clase BD.java
+2a. Asegurate de que el driver de mysql está enlazado como librería externa (jar).
+ 
+3. Crea las pantallas con Scene Builder
+	No olvides poner fx:id a los campos, botones, choicebox y tablas cuando los crees.
+	No OLVIDES marcar "Use fx:root construct" en el Controller de cada pantalla.
+	
+	Comprobación: Al iniciar la aplicación ya deben verse las pantallas y debe ser posible cambiar entre ellas utilizando las opciones del menú.
+
+CENTRATE EN LA PRIMERA PANTALLA	
+4. En la clase Principal.java, conecta todos los controles de la pantalla fxml. Solo necesitas los TextFields y los ComboBox, los botones no hacen falta. Hazlo con declaraciones del tipo:
+	@FXML
+	TextField tfNombre, tfEdad;
+	@FXML
+	ComboBox cbViviendas;
+
+6. Programa las acciones iniciales de la pantalla. En este caso:
+	- Cargar el combo de Vivienda con el idVivienda. Sigue los pasos:
+		a) En Principal.java crear la función cargarViviendas
+		b) Llamar a la función en el método start.
+		c) La función cargarViviendas pide a la clase BD un ArrayList<String> con los idVivienda
+		e) Carga el ArrayList que te ha dado BD en el comboBox.
+		
+	Comprobación: Inicia la aplicación. Debe aparecer el combox con los id_vivienda cargados.
+	
+7. Siguiendo el enunciado, cuando se carga un combo de vivienda, se completan el resto de datos.
+	a) Capturamos el evento poniendo una función en SceneBuilder en "On Action" del combobox.
+	b) Programamos la función (cargarDatosVivienda) en Principal.java.
+	c) Refrescamos pantalla1.fxml en Eclipse.	
+	d) En la función, pedimos los datos a la BD.
+	e) Los mostramos en pantalla
+	
+8. Siguiendo el enunciado, cuando el Usuario haya rellenado los campos y pulse el botón GRABAR CUOTA, se grabará la cuota en la BD.
+	a) Captura el evento poniendo en el FXML del botón su valor "On Action" con el nombre del método (grabarCuota).
+	b) Crea el método "grabarCuota" en Principal.java
+	c) Ese método recoge los datos que ha escrito el usuario.
+	d) Se los pasa a un nuevo método de la BD (grabarCuota).
+	e) Informa al usuario.
+	
+Comprueba que funcione.
+
+CÉNTRATE AHORA (si te queda tiempo) EN LA PANTALLA 2
+	
