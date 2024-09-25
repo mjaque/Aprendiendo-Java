@@ -1,0 +1,6 @@
+1. Ir al directorio del proyecto.
+2. Compilar: javac -g -d ./bin ./src/aprendiendoJava/Ejemplo.java
+3. javah -jni -d ./c -classpath ./bin aprendiendoJava.Ejemplo
+4. gcc -shared -fpic -o ./lib/libfoo.so -I/usr/lib/jvm/java-8-oracle/include/  -I/usr/lib/jvm/java-8-oracle/include/linux ./c/foo.c
+ Cambiando "/usr/lib/jvm/java-8-oracle/include/" por el path a la máquina virtual de java
+4. Ejecutar: java -classpath ./bin aprendiendoJava.Ejemplo

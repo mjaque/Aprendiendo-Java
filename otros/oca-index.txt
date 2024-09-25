@@ -1,0 +1,526 @@
+OCA: Oracle Certified Associate Java SE 8 Programmer I Study Guide: Exam 1Z0-808
+
+Introduction xxi 
+Assessment Test xxxi 
+
+Chapter 1 Java Building Blocks 1 
+	Understanding the Java Class Structure 2 
+	Fields and Methods 2 
+	Comments 4 
+	Classes vs. Files 5 
+	Writing a main() Method 6 
+	Understanding Package Declarations and Imports 9 
+	Wildcards 10 
+	Redundant Imports 11 
+	Naming Conflicts 12 
+	Creating a New Package 13 
+	Code Formatting on the Exam 16 
+	Creating Objects 16 
+	Constructors 17 
+	Reading and Writing Object Fields 18 
+	Instance Initializer Blocks 18 
+	Order of Initialization 19 
+	Distinguishing Between Object References and Primitives 20 
+	Primitive Types 20 
+	Reference Types 24 
+	Key Differences 25 
+	Declaring and Initializing Variables 25 
+	Declaring Multiple Variables 26 
+	Identifiers 27 
+	Understanding Default Initialization of Variables 29 
+	Local Variables 29 
+	Instance and Class Variables 30 
+	Understanding Variable Scope 31 
+	Ordering Elements in a Class 34 
+	Destroying Objects 36 
+	Garbage Collection 36 
+	finalize() 38 
+	Benefits of Java 39 
+	Summary 40 
+	Exam Essentials 41 
+	Review Questions 42 
+
+Chapter 2 Operators and Statements 51 
+	Understanding Java Operators 52 
+	Working with Binary Arithmetic Operators 53 
+	Arithmetic Operators 53 
+	Numeric Promotion 55 
+	Working with Unary Operators 57 
+	Logical Complement and Negation Operators 57 
+	Increment and Decrement Operators 58 
+	Using Additional Binary Operators 60 
+	Assignment Operators 60 
+	Compound Assignment Operators 62 
+	Relational Operators 63 
+	Logical Operators 64 
+	Equality Operators 65 
+	Understanding Java Statements 66 
+	The if-then Statement 67 
+	The if-then-else Statement 68 
+	The switch Statement 72 
+	The while Statement 76 
+	The do-while Statement 78 
+	The for Statement 80 
+	Understanding Advanced Flow Control 86 
+	Nested Loops 87 
+	Adding Optional Labels 87 
+	The break Statement 88 
+	The continue Statement 90 
+	Summary 92 Exam Essentials 92 
+	Review Questions 94 
+
+Chapter 3 Core Java APIs 101 
+	Creating and Manipulating Strings 102 
+	Concatenation 102 
+	Immutability 104 
+	The String Pool 105 
+	Important String Methods 105 
+	Method Chaining 110 
+	Using the StringBuilder Class 111 
+	Mutability and Chaining 112 
+	Creating a StringBuilder 113 
+	Important StringBuilder Methods 114 
+	StringBuilder vs. StringBuffer 117 
+	Understanding Equality 117 
+	Understanding Java Arrays 119 
+	Creating an Array of Primitives 119 
+	Creating an Array with Reference Variables 121 
+	Using an Array 123 
+	Sorting 124 
+	Searching 125 
+	Varargs 126 
+	Multidimensional Arrays 126 
+	Understanding an ArrayList 129 
+	Creating an ArrayList 129 
+	Using an ArrayList 130 
+	Wrapper Classes 134 
+	Autoboxing 136 
+	Converting Between array and List 136 
+	Sorting 138 
+	Working with Dates and Times 138 
+	Creating Dates and Times 138 
+	Manipulating Dates and Times 142 
+	Working with Periods 145 
+	Formatting Dates and Times 148 
+	Parsing Dates and Times 151 
+	Summary 151 
+	Exam Essentials 152 
+	Review Questions 153 
+	
+Chapter 4 Methods and Encapsulation 165 
+	Designing Methods 166 
+	Optional Specifiers 168 
+	Return Type 169 
+	Method Name 170 
+	Parameter List 171 
+	Optional Exception List 171 
+	Method Body 171 
+	Working with Varargs 172 
+	Applying Access Modifiers 173 
+	Private Access 173 
+	Default (Package Private) Access 175 
+	Protected Access 176 
+	Public Access 180 
+	Designing Static Methods and Fields 181 
+	Calling a Static Variable or Method 182 
+	Static vs. Instance 183 
+	Static Variables 185 
+	Static Initialization 186 
+	Static Imports 187 
+	Passing Data Among Methods 188 
+	Overloading Methods 191 
+	Creating Constructors 196 
+	Default Constructor 197 
+	Overloading Constructors 199 
+	Final Fields 202 
+	Order of Initialization 202 
+	Encapsulating Data 205 
+	Creating Immutable Classes 207 
+	Writing Simple Lambdas 208 
+	Lambda Example 209 
+	Lambda Syntax 211 
+	Predicates 214 
+	Summary 215 
+	Exam Essentials 216 
+	Review Questions 218 
+	
+Chapter 5 Class Design 233 
+	Introducing Class Inheritance 234 
+	Extending a Class 235 
+	Applying Class Access Modifiers 237 
+	Creating Java Objects 237 
+	Defining Constructors 238 
+	Calling Inherited Class Members 244 
+	Inheriting Methods 246 
+	Inheriting Variables 257 
+	Creating Abstract Classes 259 
+	Defining an Abstract Class 260 
+	Creating a Concrete Class 262 
+	Extending an Abstract Class 263 
+	Implementing Interfaces 266 
+	Defining an Interface 267 
+	Inheriting an Interface 269 
+	Interface Variables 273 
+	Default Interface Methods 274 
+	Static Interface Methods 278 
+	Understanding Polymorphism 279 
+	Object vs. Reference 281 
+	Casting Objects 282 
+	Virtual Methods 284 
+	Polymorphic Parameters 285 
+	Polymorphism and Method Overriding 287 
+	Summary 288 
+	Exam Essentials 289 
+	Review Questions 291 
+	
+Chapter 6 Exceptions 299 
+	Understanding Exceptions 300 
+	The Role of Exceptions 300 
+	Understanding Exception Types 302 
+	Throwing an Exception 304 
+	Using a try Statement 305 
+	Adding a finally Block 307 
+	Catching Various Types of Exceptions 309 
+	Throwing a Second Exception 311 
+	Recognizing Common Exception Types 313 
+	Runtime Exceptions 314 
+	Checked Exceptions 317 
+	Errors 317 
+	Calling Methods That Throw Exceptions 318 
+	Subclasses 319 
+	Printing an Exception 321
+	Summary 323 
+	Exam Essentials 324
+	Review Questions 325
+	
+Appendix A Answers to Review Questions 333 
+	Chapter 1: Java Building Blocks 334 
+	Chapter 2: Operators and Statements 336 
+	Chapter 3: Core Java APIs 339 
+	Chapter 4: Methods and Encapsulation 342 
+	Chapter 5: Class Design 346 
+	Chapter 6: Exceptions 349 
+	
+Appendix B Study Tips 353 
+	Studying for the Test 354 
+	Creating a Study Plan 354 
+	Creating and Running Sample Applications 355 
+	Taking the Test 359 
+	Understanding the Question 359 
+	Applying Process of Elimination 362 
+	Optimizing Your Time 364 
+	Getting a Good Night s Rest 366 
+
+Index 367
+
+	
+
+OCP: Oracle Certified Professional Java SE 8 Programmer II Study Guide: Exam 1Z0-809
+
+Introduction xix 
+Assessment Test xxxviii 
+
+Chapter 1 Advanced Class Design 1 
+	Reviewing OCA Concepts 2 
+	Access Modifiers 2 
+	Overloading and Overriding 4 
+	Abstract Classes 5 
+	Static and Final 6 
+	Imports 6 
+	Using instanceof 7 
+	Understanding Virtual Method Invocation 9 
+	Annotating Overridden Methods 11 
+	Coding equals, hashCode, and toString 13 
+		toString 13 
+		equals 15 
+		hashCode 18 
+	Working with Enums 20 
+		Using Enums in Switch Statements 21 
+	Adding Constructors, Fields, and Methods 22 
+	Creating Nested Classes 24 
+		Member Inner Classes 25 
+		Local Inner Classes 27 
+		Anonymous Inner Classes 29 
+		Static Nested Classes 31 
+	Summary 33 
+	Exam Essentials 34 
+	Review Questions 36 
+	
+Chapter 2 Design Patterns and Principles 47 
+	Designing an Interface 48 
+	Purpose of an Interface 51 
+	Introducing Functional Programming 52 
+	Defining a Functional Interface 53 
+	Implementing Functional Interfaces with Lambdas 55 
+	Applying the Predicate Interface 60 
+	Implementing Polymorphism 61 
+	Distinguishing between an Object and a Reference 63 
+	Casting Object References 64 
+	Understanding Design Principles 66 
+	Encapsulating Data 66 
+	Creating JavaBeans 69 
+	Applying the Is ]a Relationship 71 
+	Applying the Has ]a Relationship 73 
+	Composing Objects 74 
+	Working with Design Patterns 75 
+		Applying the Singleton Pattern 76 
+		Creating Immutable Objects 82 
+		Using the Builder Pattern 86 
+		Creating Objects with the Factory Pattern 89 
+	Summary 93 
+	Exam Essentials 93 
+	Review Questions 95 
+	
+Chapter 3 Generics and Collections 103 
+	Reviewing OCA Collections 104 
+	Array and ArrayList 104 
+	Searching and Sorting 105 
+	Wrapper Classes and Autoboxing 106 
+	The Diamond Operator 107 
+	Working with Generics 108 
+	Generic Classes 109 
+	Generic Interfaces 112 
+	Generic Methods 114 
+	Interacting with Legacy Code 114 
+	Bounds 117 
+	Putting It All Together 122 
+	Using Lists, Sets, Maps, and Queues 124 
+		Common Collections Methods 125 
+		Using the List Interface 127 
+		Using the Set Interface 132 
+		Using the Queue Interface 134 
+		Map 138 
+		Comparing Collection Types 140 
+	Comparator vs. Comparable 143 
+		Comparable 143 
+		Comparator 146 
+	Searching and Sorting 150 
+	Additions in Java 8 152 
+	Using Method References 152 
+	Removing Conditionally 154 
+	Updating All Elements 155 
+	Looping through a Collection 155 
+	Using New Java 8 
+	Map APIs 155 
+	Summary 159 
+	Exam Essentials 161 
+	Review Questions 162 
+	
+Chapter 4 Functional Programming 171 
+	Using Variables in Lambdas 172 
+	Working with Built-In Functional Interfaces 173 
+	Implementing Supplier 174 
+	Implementing Consumer and BiConsumer 175 
+	Implementing Predicate and BiPredicate 177 
+	Implementing Function and BiFunction 178 
+	Implementing UnaryOperator and BinaryOperator 180 
+	Checking Functional Interfaces 181 
+	Returning an Optional 182 
+	Using Streams 185 
+		Creating Stream Sources 188 
+		Using Common Terminal Operations 189 
+		Using Common Intermediate Operations 196 
+		Putting Together the Pipeline 200 
+		Printing a Stream 204 
+		Working with Primitives 205 
+		Creating Primitive Streams 205 
+		Using Optional with Primitive Streams 208 
+		Summarizing Statistics 210 
+		Learning the Functional Interfaces for Primitives 210 
+		Working with Advanced Stream Pipeline Concepts 213 
+		Linking Streams to the Underlying Data 213 
+		Chaining Optionals 214 
+		Collecting Results 217 
+	Summary 223 
+	Exam Essentials 224 
+	Review Questions 226 
+	
+Chapter 5 Dates, Strings, and Localization 233 
+	Working with Dates and Times 234 
+		Creating Dates and Times 235 
+		Manipulating Dates and Times 241 
+		Working with Periods 244 
+		Working with Durations 247 
+		Accounting for Daylight Savings Time 251 
+	Reviewing the String class 253 
+	Adding Internationalization and Localization 255 
+	Picking a Locale 256 Using a Resource Bundle 258 
+	Formatting Numbers 267 
+	Formatting Dates and Times 270 
+	Summary 273 
+	Exam Essentials 274 
+	Review Questions 276 
+	
+Chapter 6 Exceptions and Assertions 283 
+	Reviewing Exceptions 284 
+	Exceptions Terminology 284 
+	Categories of Exceptions 285 
+	Exceptions on the OCP 286 
+	Try Statement 288 Throw vs. Throws 289 
+	Creating Custom Exceptions 289 
+	Using Multi-catch 291 
+	Using Try-With-Resources 296 
+	Try-With-Resources Basics 298 
+	AutoCloseable 300 
+	Suppressed Exceptions 302 
+	Putting It Together 305 
+	Rethrowing Exceptions 305 
+	Working with Assertions 308 
+	The assert Statement 308 
+	Enabling Assertions 309 
+	Using Assertions 310 
+	Summary 314 
+	Exam Essentials 315 
+	Review Questions 316 
+	
+Chapter 7 Concurrency 325 
+	Introducing Threads 327 
+	Distinguishing Thread Types 328 
+	Understanding Thread Concurrency 328 
+	Introducing Runnable 330 
+	Creating a Thread 331 
+	Polling with Sleep 334 
+	Creating Threads with the ExecutorService 335 
+	Introducing the Single-Thread Executor 335 
+	Shutting Down a Thread Executor 337 
+	Submitting Tasks 338 
+	Waiting for Results 340 
+	Scheduling Tasks 345 
+	Increasing Concurrency with Pools 348 
+	Synchronizing Data Access 350 
+	Protecting Data with Atomic Classes 352 
+	Improving Access with Synchronized Blocks 354 
+	Synchronizing Methods 356 
+	Understanding the Cost of Synchronization 357 
+	Using Concurrent Collections 358 
+	Introducing Concurrent Collections 358 
+	Understanding Memory Consistency Errors 359 
+	Working with Concurrent Classes 360 
+	Obtaining Synchronized Collections 365 
+	Working with Parallel Streams 366 
+	Creating Parallel Streams 366 
+	Processing Tasks in Parallel 367 
+	Processing Parallel Reductions 372 
+	Managing Concurrent Processes 377 
+	Creating a CyclicBarrier 377 
+	Applying the Fork/Join Framework 381 
+	Identifying Threading Problems 387 
+	Understanding Liveness 387 
+	Managing Race Conditions 391 
+	Summary 392 
+	Exam Essentials 393 
+	Review Questions 394 
+	
+Chapter 8 IO 405 Understanding Files and Directories 406 
+	Conceptualizing the File System 406 
+	Introducing the File Class 407 
+	Introducing Streams 411 
+	Stream Fundamentals 411 
+	Stream Nomenclature 412 
+	Common Stream Operations 418 
+	Working with Streams 420 
+	The FileInputStream and FileOutputStream Classes 420 
+	The FileReader and FileWriter classes 424
+	The ObjectInputStream and ObjectOutputStream Classes 426
+	The PrintStream and PrintWriter Classes 432 
+	Review of Stream Classes 435 
+	Interacting with Users 437 
+	The Old Way 437 
+	The New Way 438 
+	Summary 442 
+	Exam Essentials 443 
+	Review Questions 445 
+	
+Chapter 9 NIO.2 453 Introducing NIO.2 
+	454 Introducing Path 455 
+	Creating Paths 456 
+	Interacting with Paths and Files 460 
+	Providing Optional Arguments 461 
+	Using Path Objects 462 
+	Interacting with Files 471 
+	Understanding File Attributes 478 
+	Discovering Basic File Attributes 478 
+	Improving Access with Views 483 
+	Presenting the New Stream Methods 487 
+	Conceptualizing Directory Walking 487 
+	Walking a Directory 488 
+	Searching a Directory 490 
+	Listing Directory Contents 491 
+	Printing File Contents 492 
+	Comparing Legacy File and NIO.2 Methods 494 
+	Summary 495 
+	Exam Essentials 495 
+	Review Questions 497 
+	
+Chapter 10 JDBC 505 
+	Introducing Relational Databases and SQL 507 
+	Identifying the Structure of a Relational Database 508 
+	Writing Basic SQL Statements 510 
+	Introducing the Interfaces of JDBC 511 
+	Connecting to a Database 513 
+	Building a JDBC URL 513 
+	Getting a Database Connection 515 
+	Obtaining a Statement 518 
+	Choosing a ResultSet Type 519 
+	Choosing a ResultSet Concurrency Mode 520 
+	Executing a Statement 520 
+	Getting Data from a ResultSet 524 
+	Reading a ResultSet 524 
+	Getting Data for a Column 526 
+	Scrolling ResultSet 529 
+	Closing Database Resources 533 
+	Dealing with Exceptions 535 
+	Summary 536 
+	Exam Essentials 537 
+	Review Questions 539 
+	
+Appendix A Answers to Review Questions 547 
+	Chapter 1: Advanced Class Design 548 
+	Chapter 2: Design Patterns and Principles 550 
+	Chapter 3: Generics and Collections 553 
+	Chapter 4: Functional Programming 556 
+	Chapter 5: Dates, Strings, and Localization 558 
+	Chapter 6: Exceptions and Assertions 560 
+	Chapter 7: Concurrency 561 
+	Chapter 8: IO 565 
+	Chapter 9: NIO.2 568 
+	Chapter 10: JDBC 571 
+	
+Appendix B Study Tips 575 
+	Studying for the Test 576 
+	Creating a Study Plan 576 
+	Comparing Previous Exams 578 
+	Creating and Running Sample Applications 579 
+	Taking the Test 582 
+	Understanding the Question 582 
+	Taking Advantage of the Exam Software 587 
+	Using the Provided Writing Material 587 
+	Choosing the Best Answer 590 
+	Optimizing Your Time 591 
+	Getting a Good Night s Rest 593 
+	
+Appendix C Upgrading from Java 6 or Earlier 595 
+	Enhancing the Java Language 596 
+	Using the Diamond Operator 596 
+	Creating Literals 597 
+	Making Decisions with Switch 598 
+	Formatting and Parsing 603 
+	Using DecimalFormat Flags 603 
+	Using DateFormat 603 
+	Formatting 604 
+	Parsing 605 
+	Custom Date Formats 606 
+	Applying Locks 607 
+	Understanding the Lock Framework 607 
+	Using a ReentrantLock 610 
+	Understanding Read/Write Locks 614 
+	Using a ReentrantReadWriteLock 615 
+	Working with Directories 617 
+	Traversing Directories 618 
+	Monitoring a Directory for Changes 625 
+	Summary 633 
+	Exam Essentials 633 
+	Review Questions 635 
+	Answers to Practice Test 645 
+	
+Index 649

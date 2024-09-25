@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	
+	<constant name="struts.devMode" value="true" />
+	
+	<!-- Indica el nombre del fichero de propiedades globales -->
+	<constant name="struts.custom.i18n.resources" value="global" />
+	
+	<package name="paqueteAcciones" extends="struts-default">
+	<!-- Los paquetes sirven para agrupar acciones -->
+		<!-- Acción directa, carga el JSP sin pasar por controlador
+		<action name="verRegistro">
+			<result>/jsp/registro.jsp</result>
+		</action>
+		 -->
+		
+		<!-- Tenemos que pasar por la acción para poder utilizar el resource bundle -->
+		<action name="verRegistro" class="es.escueladeprogramacion.controladores.AccionRegistrar" method="input">
+			<result name="input">/jsp/registro.jsp</result>
+		</action>
+		
+		<action name="registrar" class="es.escueladeprogramacion.controladores.AccionRegistrar" method="execute">
+			<result name="success">/jsp/gracias.jsp</result>
+			<result name="input">/jsp/registro.jsp</result>
+		</action>
+	</package>
+
+</struts>

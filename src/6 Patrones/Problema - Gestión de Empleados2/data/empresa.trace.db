@@ -1,0 +1,35 @@
+2016-05-01 00:52:09 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "DEPARTAMENTO" no encontrada
+Table "DEPARTAMENTO" not found; SQL statement:
+SELECT MAX(id)+1 FROM Departamento [42102-191]
+2016-05-01 00:53:02 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "INSERT INTO DEPARTAMENTOS VALUES(0, 'Dirección', 100000.0 [*]"; se esperaba "[, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"
+Syntax error in SQL statement "INSERT INTO DEPARTAMENTOS VALUES(0, 'Dirección', 100000.0 [*]"; expected "[, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, REGEXP, IS, IN, BETWEEN, AND, OR, ,, )"; SQL statement:
+INSERT INTO departamentos VALUES(0, 'Dirección', 100000.0 [42001-191]
+2016-05-01 00:55:21 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "EMPLADOS" no encontrada
+Table "EMPLADOS" not found; SQL statement:
+SELECT MAX(id)+1 FROM emplados [42102-191]
+2016-05-01 00:56:36 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "INSERT INTO empleados VALUES(0, 'Super', Jefazo[*]', 1)"
+Syntax error in SQL statement "INSERT INTO empleados VALUES(0, 'Super', Jefazo[*]', 1)"; SQL statement:
+INSERT INTO empleados VALUES(0, 'Super', Jefazo', 1) [42000-191]
+2016-05-01 00:57:23 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO empleados VALUES(0, 'Super', 'Jefazo', 1) [21002-191]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:265)
+	at org.h2.command.Parser.prepareCommand(Parser.java:257)
+	at org.h2.engine.Session.prepareLocal(Session.java:560)
+	at org.h2.engine.Session.prepareCommand(Session.java:501)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at aprendiendoJava.datos.DAOEmpleado.guardar(DAOEmpleado.java:40)
+	at aprendiendoJava.negocio.Empleado.guardar(Empleado.java:54)
+	at aprendiendoJava.aplicacion.Principal.altaEmpleado(Principal.java:59)
+	at aprendiendoJava.aplicacion.Principal.main(Principal.java:25)

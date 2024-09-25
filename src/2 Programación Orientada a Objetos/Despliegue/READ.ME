@@ -1,0 +1,6 @@
+1. Ir al directorio del proyecto.
+2. Compilar: javac -g -d ./bin ./src/aprendiendoJava/*
+3. Probar la Ejecución: java -classpath ./bin aprendiendoJava.Ejemplo
+3. Crear el paquete jar: jar cfe bin/Programa.jar aprendiendoJava.Ejemplo -C bin .
+	-C cambia el directorio para crear la estructura de paquetes correcta en el jar.
+4. Ejecutar: java -jar bin/Programa.jar

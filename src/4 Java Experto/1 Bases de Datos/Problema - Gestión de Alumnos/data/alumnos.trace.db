@@ -1,0 +1,54 @@
+2016-04-26 19:55:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" no encontrada
+Table "ALUMNOS" not found; SQL statement:
+INSERT INTO alumnos VALUES(?,?,?,?,?) [42102-191]
+2016-04-26 19:57:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" no encontrada
+Table "ALUMNOS" not found; SQL statement:
+INSERT INTO alumnos VALUES(?,?,?,?,?) [42102-191]
+2016-04-28 07:45:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "CREATE TABLE ALUMNOS (ID INT))[*] "
+Syntax error in SQL statement "CREATE TABLE ALUMNOS (ID INT))[*] "; SQL statement:
+CREATE TABLE alumnos (id INT)) [42000-191]
+2016-04-28 07:47:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "CREATE TABLE ALUMNOS(ID INT))[*] "
+Syntax error in SQL statement "CREATE TABLE ALUMNOS(ID INT))[*] "; SQL statement:
+CREATE TABLE alumnos(id INT)) [42000-191]
+2016-04-28 07:48:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "CREATE TABLE ALUMNOS(ID INT))[*]; "
+Syntax error in SQL statement "CREATE TABLE ALUMNOS(ID INT))[*]; "; SQL statement:
+CREATE TABLE alumnos(id INT)); [42000-191]
+2016-04-28 07:49:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" no encontrada
+Table "ALUMNOS" not found; SQL statement:
+SELECT id, nombre, apellidos, fecha_matricula, nota_media FROM alumnos  [42102-191]
+2016-04-28 07:53:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" no encontrada
+Table "ALUMNOS" not found; SQL statement:
+INSERT INTO alumnos VALUES(?,?,?,?,?) [42102-191]
+2016-04-28 07:54:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" no encontrada
+Table "ALUMNOS" not found; SQL statement:
+INSERT INTO alumnos VALUES(?,?,?,?,?) [42102-191]
+2016-04-28 07:54:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" no encontrada
+Table "ALUMNOS" not found; SQL statement:
+SELECT id, nombre, apellidos, fecha_matricula, nota_media FROM alumnos  [42102-191]
+2016-04-28 08:03:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "ALUMNOS" no encontrada
+Table "ALUMNOS" not found; SQL statement:
+INSERT INTO alumnos VALUES(?,?,?,?,?) [42102-191]
+2016-04-28 15:48:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Parametro "#5" no está fijado
+Parameter "#5" is not set; SQL statement:
+INSERT INTO alumnos VALUES(?,?,?,?,?) [90012-191]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:81)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:164)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:97)
+	at org.h2.command.Command.executeUpdate(Command.java:258)
+	at org.h2.jdbc.JdbcPreparedStatement.execute(JdbcPreparedStatement.java:201)
+	at aprendiendoJava.Ejercicio.insertar(Ejercicio.java:165)
+	at aprendiendoJava.Ejercicio.main(Ejercicio.java:48)
