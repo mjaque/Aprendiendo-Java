@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="50.0" layoutY="27.0" text="FECHA INICIO" />
+      <Label layoutX="242.0" layoutY="27.0" text="NOMBRE CLIENTE" />
+      <Label layoutX="451.0" layoutY="27.0" text="FECHA FINAL" />
+      <DatePicker fx:id="dpFechaInicio" layoutX="14.0" layoutY="50.0" />
+      <DatePicker fx:id="dpFechaFinal" layoutX="395.0" layoutY="50.0" />
+      <ComboBox fx:id="cbClientes" layoutX="225.0" layoutY="50.0" prefWidth="150.0" />
+      <TableView fx:id="tvTabla" layoutX="13.0" layoutY="92.0" prefHeight="213.0" prefWidth="580.0">
+        <columns>
+          <TableColumn fx:id="tcVivienda" prefWidth="103.0" text="VIVIENDA" />
+          <TableColumn fx:id="tcDireccion" prefWidth="100.0" text="DIRECCIÓN" />
+            <TableColumn fx:id="tcLocalidad" prefWidth="94.0" text="LOCALIDAD" />
+            <TableColumn fx:id="tcFecha" prefWidth="75.0" text="FECHA" />
+            <TableColumn fx:id="tcImporte" prefWidth="75.0" text="IMPORTE" />
+            <TableColumn fx:id="tcConcepto" prefWidth="132.0" text="CONCEPTO" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnMostrar" layoutX="228.0" layoutY="343.0" mnemonicParsing="false" onAction="#mostrarListado" text="MOSTRAR LISTADO" />
+   </children>
+</fx:root>

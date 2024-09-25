@@ -1,0 +1,5 @@
+Texto de prueba
+-346
+3.141592
+6.022E23
+true
